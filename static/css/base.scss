@@ -1,0 +1,203 @@
+@import 'support/mixins';
+@import 'support/reset';
+
+body {
+	font-size: 100%;
+}
+
+body,
+input,
+select {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+header,
+footer {
+	background: #eee;
+	padding: 2%;
+}
+
+section {
+	@include clearfix;
+	overflow: hidden;
+	padding: 2%;
+}
+
+.posts,
+.single .post {
+	float: left;
+	width: 68%;
+	@include mq-mobile {
+		float: none;
+		width: auto;
+	}
+}
+
+aside {
+	float: right;
+	width: 24%;
+	@include mq-mobile {
+		float: none;
+		width: auto;
+	}
+}
+
+// Images
+img {
+	margin: 0 0 2%;
+}
+
+.avatar {
+	margin: 0;
+}
+
+// Typography
+h1 {
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0 0 2%;
+}
+
+// Image Alignment
+.aligncenter { 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1%;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1%;
+}
+
+// Captions
+.wp-caption-text {
+	background: #eee;
+	margin: 0 0 2%;
+	padding: 2%;
+}
+
+// Section / Post Styles
+// Address
+address {
+	font-style: italic;
+	margin: 0 0 2%;
+}
+
+// - Blockquotes
+blockquote {
+	padding: 0 4% 2%;
+}
+
+cite, i {
+	font-style: italic;
+}
+
+// - Code
+code, pre {
+	font-family: monospace;
+	margin-bottom: 2%;
+}
+
+// - Lists
+dd {
+	margin: 0 0 0 2%;
+}
+
+dl {
+	margin: 0 0 2%;
+}
+
+ol {
+	list-style-type: decimal;
+	margin: 0 0 2% 2%;
+}
+
+ul {
+	list-style-type: disc;
+	margin: 0 0 2% 2%;
+}
+
+ul ul,
+ol ul {
+	list-style-type: circle;
+}
+
+ol ol ul,
+ol ul ul,
+ul ol ul,
+ul ul ul {
+	list-style-type: square;
+}
+
+// Strike
+strike {
+	text-decoration: line-through;
+}
+
+// Strong
+strong {
+	font-weight: bold;
+}
+
+// Sub/Supscript
+sub {
+	font-size: smaller;
+	vertical-align: sub;
+}
+
+sup {
+	font-size: smaller;
+	vertical-align: super;
+}
+
+// Navigation
+.navigation {
+	@include clearfix;
+}
+
+// - Tables
+table {
+	margin-bottom: 2%;
+}
+
+th, td {
+	background: #eee;
+	padding: 1%;
+}
+
+th {
+	background: #ddd;
+	font-weight: bold;
+}
