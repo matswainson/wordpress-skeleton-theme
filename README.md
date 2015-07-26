@@ -13,3 +13,10 @@ A base wordpress theme to help improve development workflow.
 	<li>Modernizr</li>
 	<li>Sass Support + Included Mixins</li>
 </ul>
+
+## Requirements
+
+<ul>
+	<li>Gulp [gulpjs.com](http://gulpjs.com/)</li>
+	<li>Node.js [nodejs.org](https://nodejs.org/)</li>
+</ul>
