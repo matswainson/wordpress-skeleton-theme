@@ -17,6 +17,6 @@ A base wordpress theme to help improve development workflow.
 ## Requirements
 
 <ul>
-	<li>Gulp [gulpjs.com](http://gulpjs.com/)</li>
-	<li>Node.js [nodejs.org](https://nodejs.org/)</li>
+	<li>Gulp (http://gulpjs.com)</li>
+	<li>Node.js (https://nodejs.org)</li>
 </ul>
